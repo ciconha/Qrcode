@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de QR</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <img src="imagem/calmos.gif" alt="Anime Vibes" class="gif-top">
+        <h1>Gerador de QR Code </h1>
+        <input type="text" id="link" placeholder="Digite a URL">
+        <button onclick="gerarQRCode()">Gerar QR Code</button>
+     
+       
+
+        <div class="qrcode-container" id="qrcode-area" style="display: none;">
+            <img src="imagem/sacam, qrcode.png" alt="QR Code Fundo" class="qrcode-bg">
+            <div id="qrcode"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
